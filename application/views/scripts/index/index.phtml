@@ -1,0 +1,15 @@
+<h1>Bem vindo</h1>
+
+<?php
+
+if (isset($this->perfil['root']) || isset($this->perfil['admin']))
+	echo <<<INFO
+		<p>Esta tela não possui, inicialmente, nenhuma funcionalidade além de informações 
+		básicas aos usuários. Aconselhamos mantê-la operacional, uma vez que serve como uma ajuda a
+		todo novo usuário. As informações apresentadas aqui variam de acordo com o perfil do usuário.
+		Você poderá editar este conteudo diretamente para alteração, acréscimo ou remoção de informações em:<br><br>
+
+INFO;
+
+if (isset($this->perfil['root']) || isset($this->perfil['admin']))
+	echo APPLICATION_PATH.DIRECTORY_SEPARATOR.'views'.DIRECTORY_SEPARATOR.'sript'.DIRECTORY_SEPARATOR.'index'.DIRECTORY_SEPARATOR.'index.html';

@@ -138,9 +138,8 @@ class InstallationController extends SanSIS_Controller_Action
 					
 					if (!$values['manual'])
 					{					
-						$conn = new PDO('pgsql:host='.$values['server'].';dbname=postgres', $values['superuser'], $values['passwd']);
-						
-						$conn->exec('CREATE DATABASE '.$values['dbname'].'
+						$conn = new PDO('pgsql:host='.$_SESSION['server'].';dbname=postgres', $_SESSION['superuser'], $_SESSION['passwd']);
+						$conn->exec('CREATE DATABASE '.$_SESSION['dbname'].'
 										WITH OWNER = postgres
 										ENCODING = \'UTF8\'
 										TABLESPACE = pg_default
@@ -148,7 +147,7 @@ class InstallationController extends SanSIS_Controller_Action
 						
 						$script = file_get_contents(APPLICATION_PATH.DIRECTORY_SEPARATOR.'..'.DIRECTORY_SEPARATOR.'data'.DIRECTORY_SEPARATOR.'database.sql');
 						
-						$conn = new PDO('pgsql:host='.$values['server'].';dbname='.$values['dbname'], $values['superuser'], $values['passwd']);
+						$conn = new PDO('pgsql:host='.$_SESSION['server'].';dbname='.$_SESSION['dbname'], $_SESSION['superuser'], $_SESSION['passwd']);
 						$conn->exec($script);
 						
 						$script = file_get_contents(APPLICATION_PATH.DIRECTORY_SEPARATOR.'..'.DIRECTORY_SEPARATOR.'data'.DIRECTORY_SEPARATOR.'data.sql');

@@ -5,7 +5,7 @@ Zandbox para aplicações web utilizando ZF 1.11 e PostgreSQL
 
 ## Funcionalidades pré-embutidas
 
-- Instalar fácil on-line
+- Wizard de instalação on-line
 - ACL com base em perfil de usuário
 - Já possui módulo de administração com os seguintes cruds básicos:
 

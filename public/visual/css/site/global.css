@@ -16,8 +16,6 @@ body
 	background-color: #EEEEEE;
 }
 
-
-
 a:link, a:visited, a:active, a:hover
 {
 	color: #0000FF;
@@ -166,7 +164,7 @@ a:link, a:visited, a:active, a:hover
 
 #view-titlebar
 {
-	height: 44px;
+/* 	height: 44px; */
 	padding: 0px;
 	margin-top: 10px;
 }
@@ -174,7 +172,7 @@ a:link, a:visited, a:active, a:hover
 #view-title
 {
 	font-size: 15px;
-	height: 18px;
+/* 	height: 18px; */
 	padding: 3px;
 	padding-left: 15px;
 }
@@ -183,7 +181,7 @@ a:link, a:visited, a:active, a:hover
 {
 	color: #000000;
 	font-size: 12px;
-	height: 14px;
+/* 	height: 14px; */
 	padding: 3px;
 	padding-left: 15px;
 }
@@ -218,7 +216,7 @@ a:link, a:visited, a:active, a:hover
 	background-color:white; 
 	clear: right; 
 	position: relative;
-	width: 650px;
+	max-width: 650px;
 	height: 250px;
 	overflow: auto;
 }

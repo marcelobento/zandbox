@@ -203,7 +203,9 @@ class InstallationController extends SanSIS_Controller_Action
 			
 			$appini_path = APPLICATION_PATH.DIRECTORY_SEPARATOR.'configs'.DIRECTORY_SEPARATOR.'application.ini';
 
-			if (!(fileperms($appini_path) & 0x0080))
+// 			echo fileperms($appini_path);die;
+			$perms = fileperms($appini_path);
+			if (!(($perms & 0x0080) && ($perms & 0x0010) && ($perms & 0x0002)))
 			{
 				$this->view->form->populate($this->getRequest()->getParams());
 				$this->addInstantMessage(SanSIS_Message::TYPE_ERROR, SanSIS_Message::MSG_CONFWRITEPERM);

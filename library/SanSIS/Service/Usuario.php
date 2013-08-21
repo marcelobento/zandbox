@@ -1,10 +1,10 @@
 <?php
 
 /**
- * Business de Usuário
+ * Service de Usuário
  *
  * @package		SanSIS
- * @category	Business
+ * @category	Service
  * @name		Usuario
  * @author		Pablo Santiago Sánchez <phackwer@gmail.com> 
  * @version		1.0.0
@@ -20,7 +20,7 @@ class SanSIS_Service_Usuario extends SanSIS_Service
 	
 	/**
 	 * Retorna o mapeamento do objeto para popular o formulário
-	 * Deve ser implantado de acordo com a Business
+	 * Deve ser implantado de acordo com a Service
 	 */
 	public function getMapping()
 	{
@@ -33,7 +33,7 @@ class SanSIS_Service_Usuario extends SanSIS_Service
 	
 	/**
 	* Carrega objetos para edição
-	* Deve ser implantado de acordo com a Business
+	* Deve ser implantado de acordo com a Service
 	*/
 	public function load($id = null, $forUpdate = false)
 	{
@@ -47,7 +47,7 @@ class SanSIS_Service_Usuario extends SanSIS_Service
 	
 	/**
 	 * Salva dados submetidos
-	 * Deve ser implantado de acordo com a Business
+	 * Deve ser implantado de acordo com a Service
 	 */
 	public function save($values)
 	{
@@ -64,7 +64,7 @@ class SanSIS_Service_Usuario extends SanSIS_Service
 	
 	/**
 	* Salva dados para a instalação
-	* Deve ser implantado de acordo com a Business
+	* Deve ser implantado de acordo com a Service
 	*/
 	public function saveInstall($values)
 	{

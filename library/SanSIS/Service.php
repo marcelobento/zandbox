@@ -1,10 +1,10 @@
 <?php
 /**
- * Business para camada Business.
+ * Service para camada Service.
  *
  * @package		SanSIS
- * @category	Business
- * @name		Business
+ * @category	Service
+ * @name		Service
  * @author		Pablo Santiago Sánchez <phackwer@gmail.com> 
  * @version		1.0.0
  */
@@ -35,7 +35,7 @@ class SanSIS_Service
 				echo 'Arquivo:  ' . $debug [0] ['file'] . '<br>';
 				echo 'Linha:	' . $debug [0] ['line'] . '<br>';
 				echo 'Classe:   ' . $debug [0] ['class'] . '<br>';
-				echo 'Erro:	 Business só pode ser instanciado na Controller';
+				echo 'Erro:	 Service só pode ser instanciado na Controller';
 				die ();
 			}
 		}
@@ -72,7 +72,7 @@ class SanSIS_Service
 	
 	/**
 	 * Retorna o mapeamento do objeto para popular o formulário
-	 * Deve ser implantado de acordo com a Business
+	 * Deve ser implantado de acordo com a Service
 	 */
 	public function getMapping()
 	{
@@ -81,7 +81,7 @@ class SanSIS_Service
 	
 	/**
 	 * Obtém os dados para popular selects, radios, etc do formulário
-	 * Deve ser implantado de acordo com a Business
+	 * Deve ser implantado de acordo com a Service
 	 */
 	public function getFormData($id = null)
 	{
@@ -114,7 +114,7 @@ class SanSIS_Service
 	
 	/**
 	 * Carrega objetos para edição
-	 * Deve ser implantado de acordo com a Business
+	 * Deve ser implantado de acordo com a Service
 	 */
 	public function load($id)
 	{
@@ -123,7 +123,7 @@ class SanSIS_Service
 	
 	/**
 	 * Salva dados submetidos
-	 * Deve ser implantado de acordo com a Business
+	 * Deve ser implantado de acordo com a Service
 	 */
 	public function save($values)
 	{
@@ -142,7 +142,7 @@ class SanSIS_Service
 	
 	/**
 	 * Remove registro do banco
-	 * Deve ser implantado de acordo com a Business
+	 * Deve ser implantado de acordo com a Service
 	 */
 	public function delete($objeto)
 	{

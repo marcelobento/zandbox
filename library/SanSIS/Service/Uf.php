@@ -1,10 +1,10 @@
 <?php
 
 /**
- * Business de UF
+ * Service de UF
  *
  * @package		SanSIS
- * @category	Business
+ * @category	Service
  * @name		Uf
  * @author		Pablo Santiago Sánchez <phackwer@gmail.com> 
  * @version		1.0.0

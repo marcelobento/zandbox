@@ -179,7 +179,7 @@ abstract class SanSIS_Controller_Action extends Zend_Controller_Action
 					if(isset($values['username']) && isset($values['password']))
 					{
 						$adapter = new SanSIS_Auth_Adapter($values['username'],$values['password']);
-						$adapter->setAuthBiz($this->service);
+						$adapter->setAuthService($this->service);
 						$result = $auth->authenticate($adapter);
 						
 						if ($result->getIdentity()->user->id)

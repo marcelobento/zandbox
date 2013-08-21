@@ -10,7 +10,7 @@ class Devel_Bootstrap extends Zend_Application_Module_Bootstrap
 		);
 		
 		$autoloader->addResourceType('form', 		'forms/', 		'Form');
-		$autoloader->addResourceType('business', 	'business/', 	'Business');
+		$autoloader->addResourceType('service', 	'services/', 	'Service');
 		
 		return $autoloader;
 	}

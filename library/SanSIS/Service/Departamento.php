@@ -1,10 +1,10 @@
 <?php
 
 /**
- * Business de Departamentos
+ * Service de Departamentos
  *
  * @package		SanSIS
- * @category	Business
+ * @category	Service
  * @name		Departamento
  * @author		Pablo Santiago Sánchez <phackwer@gmail.com> 
  * @version		1.0.0

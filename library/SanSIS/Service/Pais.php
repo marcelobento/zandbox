@@ -1,10 +1,10 @@
 <?php
 
 /**
- * Business de País
+ * Service de País
  *
  * @package		SanSIS
- * @category	Business
+ * @category	Service
  * @name		Pais
  * @author		Pablo Santiago Sánchez <phackwer@gmail.com> 
  * @version		1.0.0

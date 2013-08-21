@@ -27,7 +27,7 @@ class SanSIS_Auth_Adapter implements Zend_Auth_Adapter_Interface
 		$this->password = hash('whirlpool', $password);;
 	}
 	
-	public function setAuthBiz(SanSIS_Service $service)
+	public function setAuthService(SanSIS_Service $service)
 	{
 		$this->service = $service;
 	}

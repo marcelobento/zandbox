@@ -1,10 +1,10 @@
 <?php
 
 /**
- * Business de Participantes
+ * Service de Participantes
  *
  * @package		SanSIS
- * @category	Business
+ * @category	Service
  * @name		Participante
  * @author		Pablo Santiago Sánchez <phackwer@gmail.com> 
  * @version		1.0.0

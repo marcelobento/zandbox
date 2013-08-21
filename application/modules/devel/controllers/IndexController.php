@@ -54,7 +54,7 @@ class Devel_IndexController extends SanSIS_Controller_Action
 				$this->createController($params, $mod_path, $result);
 
 				#Cria negócio
-				$this->createBusiness($params, $mod_path, $result);
+				$this->createService($params, $mod_path, $result);
 				
 				#Cria apresentação
 				$this->createView($params, $mod_path, $result);
@@ -99,7 +99,7 @@ class Devel_IndexController extends SanSIS_Controller_Action
 			$class .= "		);\n";
 			$class .= "\n";
 			$class .= "		\$autoloader->addResourceType('form',	 	'forms/',		'Form');\n";
-			$class .= "		\$autoloader->addResourceType('business',	'business/',	'Business');\n";
+			$class .= "		\$autoloader->addResourceType('services',	'services/',	'Service');\n";
 			$class .= "\n";
 			$class .= "		return \$autoloader;\n";
 			$class .= "	}\n";
@@ -207,9 +207,9 @@ class Devel_IndexController extends SanSIS_Controller_Action
 		}
 	}
 	
-	public function createBusiness($params, $mod_path, &$result)
+	public function createService($params, $mod_path, &$result)
 	{
-		$service_path = $mod_path.DIRECTORY_SEPARATOR.'business';
+		$service_path = $mod_path.DIRECTORY_SEPARATOR.'services';
 	
 		if (!file_exists($service_path))
 			mkdir($service_path);
@@ -222,10 +222,10 @@ class Devel_IndexController extends SanSIS_Controller_Action
 		{
 			$class  = "<?php\n";
 			$class .= "/**\n";
-			$class .= " * Classe para Business de ".$params['controlador_novo']."\n";
+			$class .= " * Classe para Service de ".$params['controlador_novo']."\n";
 			$class .= " *\n";
 			$class .= " * @package	 ".ucfirst($params['modulo_novo'])."\n";
-			$class .= " * @category	Business\n";
+			$class .= " * @category	Service\n";
 			$class .= " * @name		".$params['controlador_novo']."\n";
 			$class .= " * @version	 1.0.0\n";
 			$class .= " */\n";

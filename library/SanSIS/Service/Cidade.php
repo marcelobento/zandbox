@@ -1,10 +1,10 @@
 <?php
 
 /**
- * Business de Cidades
+ * Service de Cidades
  *
  * @package		SanSIS
- * @category	Business
+ * @category	Service
  * @name		Cidade
  * @author		Pablo Santiago Sánchez <phackwer@gmail.com>
  * @version		1.0.0
@@ -20,7 +20,7 @@ class SanSIS_Service_Cidade extends SanSIS_Service
 	
 	/**
 	 * Retorna o mapeamento do objeto para popular o formulário
-	 * Deve ser implantado de acordo com a Business
+	 * Deve ser implantado de acordo com a Service
 	 */
 	public function getMapping()
 	{

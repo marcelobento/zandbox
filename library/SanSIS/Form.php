@@ -34,7 +34,7 @@ class SanSIS_Form extends Zend_Form {
 	}
 	
 	/**
-	 * Método para popular o formulário com os dados advindos da Model pela Business
+	 * Método para popular o formulário com os dados advindos da Model pela Service
 	 * Deve ser sobrescrito ou deixado inócuo 
 	 * @param array $data
 	 */

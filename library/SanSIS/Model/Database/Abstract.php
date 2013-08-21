@@ -48,7 +48,7 @@ abstract class SanSIS_Model_Database_Abstract extends Zend_Db_Table_Abstract
 				$msg .= 'Linha:			' . $debug [0] ['line'] . '<br>';
 				$msg .= 'Classe:		' . $debug [0] ['class'] . '<br>';
 				$msg .= 'Classe pai:	' . $debug [1] ['class'] . '<br>';
-				$msg .= 'Erro:			Model só pode ser instanciado na Business ou na Model<br><br>';
+				$msg .= 'Erro:			Model só pode ser instanciado na Service ou na Model<br><br>';
 				
 				throw new Exception($msg);
 			}
